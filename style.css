@@ -1,63 +1,35 @@
+html {
+    background-color: grey;
+}
+
 #frame {
     display: flex;
-    border: 1px solid black;
-    /* text-wrap: nowrap; */
     flex-wrap: wrap;
-    width: 168px;
-}
-
-#first-row {
-    display: flex;
-    padding-top: 40px;
-    max-width: 42px;
-    max-height: 42px;
-}
-
-#add p,
-#subtract p,
-#multiply p,
-#divide p,
-#dot p,
-#one p,
-#two p,
-#three p,
-#four p,
-#five p,
-#six p,
-#reset p,
-#seven p,
-#eight p,
-#nine p,
-#equal p,
-#placeholder,
-#zero {
-    display: flex;
+    width: 200px;
     border: 1px solid black;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
+    gap: 8px;
 }
 
-#second-row {
-    display: flex;
-    /* margin: auto;
-    padding: auto; */
+.calculation {
+    width: 200px;
+    height: 75px;
+    border: 1px solid black;
+
 }
 
-#third-row {
+#buttons {
     display: flex;
-    margin-top: -32px;
-    /* margin: auto;
-    padding: auto; */
+    flex-wrap: nowrap;
+    border: 1px solid red;
+    flex-direction: column;
+    margin-top: -8px;
 }
 
-#fourth-row {
-    display: flex;
-    margin-top: -32px;
+button {
+    width: 46px;
+    height: auto;
 }
 
-#fifth-row {
-    display: flex;
-    margin-top: -16px;
+.placeholder p {
+    visibility: hidden;
 }
